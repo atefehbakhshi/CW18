@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header
+      class="flex justify-between p-4 whitespace-nowrap fix"
+      style="background-color: #fff; box-shadow: 0 6px 13px 0 rgb(0 0 0 / 6%)"
+    >
+      <div class="flex">
+        <button class="rounded-3xl bg-[#3094ea] px-3 py-1 my-2 text-white">
+          باز کردن حساب بلو
+        </button>
+
+        <nav>
+          <ul class="flex items-center my-5">
+            <li class="px-4">درباره ما</li>
+            <li class="px-4">بلاگ</li>
+            <li class="px-4">سوالات متداول</li>
+            <li class="px-4">موقعیت شغلی</li>
+            <li class="px-4">بلو جونیور</li>
+          </ul>
+        </nav>
+      </div>
+      <img src="../assets/images/logo.JPG" alt="logo" />
+    </header>
+    <main class="p-8">
+      <img
+        class="mb-[10rem]"
+        src="../assets/images/headerImage.JPG"
+        alt="header image"
+      />
+      <div class="grid grid-cols-3">
+        <img
+          class="col-span-1"
+          src="../assets/images/slider.JPG"
+          alt="slider"
+        />
+        <div class="col-span-2 grid grid-cols-3 gap-5">
+          <div class="flex flex-col items-center justify-center">
+            <img class="w-20 " src="../assets/images/slider-right.JPG" alt="" />
+            <div
+              class="col-span-1 flex flex-col justify-center py-10 px-8 self-center bg-[#ebf4fc] rounded-xl"
+            >
+              <h3 class="whitespace-nowrap font-bold mb-3">
+                ده درصد سود سپرده
+              </h3>
+              <p class="text-center text-[#3094ea]">
+                در بلوبانک برای حداقل مانده در ماه سود سالیانه
+              </p>
+            </div>
+          </div>
+          <div class="items-center flex flex-col justify-center">
+            <img class="w-20 " src="../assets/images/slider-middle.JPG " alt="" />
+            <div
+              class="col-span-1 flex flex-col justify-center py-10 px-8 self-center bg-[#ebf4fc] rounded-xl"
+            >
+              <h3 class="whitespace-nowrap font-bold mb-3">
+                ده درصد سود سپرده
+              </h3>
+              <p class="text-center text-[#3094ea]">
+                در بلوبانک برای حداقل مانده در ماه سود سالیانه
+              </p>
+            </div>
+          </div>
+          <div class="items-center flex flex-col justify-center">
+            <img class="w-20 " src="../assets/images/slider-left.JPG" alt="" />
+            <div
+              class="col-span-1 flex flex-col justify-center py-10 px-8 self-center bg-[#ebf4fc] rounded-xl"
+            >
+              <h3 class="whitespace-nowrap font-bold mb-3">
+                ده درصد سود سپرده
+              </h3>
+              <p class="text-center text-[#3094ea]">
+                در بلوبانک برای حداقل مانده در ماه سود سالیانه
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
