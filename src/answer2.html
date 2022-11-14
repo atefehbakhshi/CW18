@@ -14,15 +14,15 @@
   </head>
   <body>
     <header
-      class="flex justify-between p-4 whitespace-nowrap fix"
+      class="flex justify-between p-4 whitespace-nowrap"
       style="background-color: #fff; box-shadow: 0 6px 13px 0 rgb(0 0 0 / 6%)"
     >
-      <div class="flex">
+      <div class="hidden sm:flex">
         <button class="rounded-3xl bg-[#3094ea] px-3 py-1 my-2 text-white">
           باز کردن حساب بلو
         </button>
 
-        <nav>
+        <nav >
           <ul class="flex items-center my-5">
             <li class="px-4">درباره ما</li>
             <li class="px-4">بلاگ</li>
@@ -30,9 +30,25 @@
             <li class="px-4">موقعیت شغلی</li>
             <li class="px-4">بلو جونیور</li>
           </ul>
+
+
         </nav>
+        
       </div>
-      <img src="../assets/images/logo.JPG" alt="logo" />
+      <button id="menu-button" class="block md:hidden focus:outline-none">
+        <i class="fa fa-bars"></i>
+      </button>
+      <!--Mobile menu-->
+      <div class="hidden md:hidden flex-col items-center self-end font-bold bg-white shadow-md" id="mobile-menu">
+        <ul class="flex flex-col items-center my-5">
+          <li class="px-4">درباره ما</li>
+          <li class="px-4">بلاگ</li>
+          <li class="px-4">سوالات متداول</li>
+          <li class="px-4">موقعیت شغلی</li>
+          <li class="px-4">بلو جونیور</li>
+        </ul>
+      </div>
+      <div><img src="../assets/images/logo.JPG" alt="logo" /></div>
     </header>
     <main class="p-8">
       <img
@@ -48,7 +64,7 @@
         />
         <div class="col-span-2 grid grid-cols-3 gap-5">
           <div class="flex flex-col items-center justify-center">
-            <img class="w-20 " src="../assets/images/slider-right.JPG" alt="" />
+            <img class="w-20" src="../assets/images/slider-right.JPG" alt="" />
             <div
               class="col-span-1 flex flex-col justify-center py-10 px-8 self-center bg-[#ebf4fc] rounded-xl"
             >
@@ -61,7 +77,11 @@
             </div>
           </div>
           <div class="items-center flex flex-col justify-center">
-            <img class="w-20 " src="../assets/images/slider-middle.JPG " alt="" />
+            <img
+              class="w-20"
+              src="../assets/images/slider-middle.JPG "
+              alt=""
+            />
             <div
               class="col-span-1 flex flex-col justify-center py-10 px-8 self-center bg-[#ebf4fc] rounded-xl"
             >
@@ -74,7 +94,7 @@
             </div>
           </div>
           <div class="items-center flex flex-col justify-center">
-            <img class="w-20 " src="../assets/images/slider-left.JPG" alt="" />
+            <img class="w-20" src="../assets/images/slider-left.JPG" alt="" />
             <div
               class="col-span-1 flex flex-col justify-center py-10 px-8 self-center bg-[#ebf4fc] rounded-xl"
             >
@@ -88,6 +108,136 @@
           </div>
         </div>
       </div>
+
+      <div class="grid grid-cols-2">
+        <div class="col-span-1 flex flex-col justify-center">
+          <h2 class="text-[#3094ea] p-4">بلو،فقط آبی نیست ...</h2>
+          <ul>
+            <li>عضو سامانه شتاب بانک مرکزی</li>
+            <li>
+              ارسال رایگان کارت بانکی به آدرس دلخواه شما در کمتر از پنج روز کاری
+              در تهران و ده روز کارید در سایر نفاط کشور
+            </li>
+            <li>
+              دریافت و فعال سازی آنلاین رمز های پاد از طریق اپلیکیشن بلوبانک
+            </li>
+            <li>امکان مسدود کردن کارت از طریق اپلیکیشن بلوبانک</li>
+          </ul>
+        </div>
+
+        <img
+          class="col-span-1"
+          src="../assets/images/slider2.JPG"
+          alt="slider"
+        />
+      </div>
+
+      <div class="grid grid-cols-2 bg-[#3094ea] py-16">
+        <img
+          class="col-span-1"
+          src="../assets/images/always&everywhere.JPG"
+          alt="slider"
+        />
+        <div class="col-span-1 flex flex-col justify-center text-white">
+          <h2 class="font-bold p-4">بلولاین؛ همیشه به وقت همه جا</h2>
+          <p>
+            اگر سوالی دارید در چت اپلیکیشن بلوبانک پیام صوتی یا متنی بگذارید یا
+            با شماره021-87641 تماس بگیرید
+          </p>
+          <p>
+            کارشناسان بلولاین همیشه آماده ی پاسخ گویی و حل مشکلات احتمالی شما
+            هستند.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2">
+        <div class="col-span-1 flex flex-col justify-center">
+          <h2 class="text-[#3094ea] p-4">بلو،فقط آبی نیست ...</h2>
+          <ul>
+            <li>عضو سامانه شتاب بانک مرکزی</li>
+            <li>
+              ارسال رایگان کارت بانکی به آدرس دلخواه شما در کمتر از پنج روز کاری
+              در تهران و ده روز کارید در سایر نفاط کشور
+            </li>
+            <li>
+              دریافت و فعال سازی آنلاین رمز های پاد از طریق اپلیکیشن بلوبانک
+            </li>
+            <li>امکان مسدود کردن کارت از طریق اپلیکیشن بلوبانک</li>
+          </ul>
+        </div>
+
+        <img
+          class="col-span-1"
+          src="../assets/images/slider2.JPG"
+          alt="slider"
+        />
+      </div>
     </main>
+
+    <footer>
+      <div class="grid grid-cols-4 bg-[#3094ea] py-16 px-4">
+        <div class="col-span-3 items-center text-white">
+          <h2 class="font-bold p-4">امنیت حساب‌ها در بلوبانک</h2>
+          <p>نحوه حفاظت از سرمایه مشتریان</p>
+          <p>
+            مبالغ سپرده‌‌های مشتریان در چارچوب ضوابط قانونی و تا سقف قانونی
+            تعیین شده مورد تضمین «صندوق ضمانت سپرده‌های بانک مرکزی» است..
+          </p>
+          <h2>پروتکل‌های امنیتی</h2>
+          <p>
+            در بلوبانک همه پروتکل‌های امنیتی در سیستم‌های زیرساخت بانکی و همچنین
+            استانداردهای بانک مرکزی در خصوص تسویه وجوه و حسابداری، به‌دقت رعایت
+            شده است. آسایش بیشتر جایگزینی کارت بانکی با پول کاغذی به دلیل اشراف
+            لحظه‌ای بر دارایی‌های مشتریان، سبب امنیت دوچندان حساب‌های بانکی شده
+            است. این تجربه موفق نشان داده است، روند دیجیتالی شدن منجر به آسایش و
+            راحتی بیشتری برای مشتریان می‌شود.
+          </p>
+          <h2>ارتباط با ما</h2>
+          <p>
+            آدرس : تهران، خیابان نلسون ماندلا، خیابان شهید رحیمی، پلاک ۴۳ تلفن :
+            ۸۷۶۴۱ - ۰۲۱
+          </p>
+        </div>
+        <img
+          class="col-span-1"
+          src="../assets/images/footer.JPG"
+          alt="footer"
+        />
+      </div>
+    </footer>
+
+    <script>
+      // const hamburgerMenue = document.getElementById("hamburger-menue");
+      // const menu = document.querySelector("#menu");
+      // const div = document.createElement("div");
+      // menu.addEventListener("click", () => {
+      //           document.body.style.cssText = `
+      // overflow: auto;
+      // `;
+      //         div.style.cssText = `
+      // display:block;
+      // height:100vh;
+      // width:100vw;
+      // background-color:gray;
+      // position:absolute;
+      // top:0;
+      // left:0;
+      // opacity:0.6;
+      // transition: transform .3s cubic-bezier(0,.52,0,1);
+      // `;
+
+      //         document.body.append(div);
+
+      // });
+      // });
+
+      const menuButton = document.getElementById("menu-button");
+      const mobileNav = document.getElementById("mobile-menu");
+      menuButton.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+        mobileNav.classList.toggle("flex");
+      });
+    </script>
   </body>
 </html>
